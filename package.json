@@ -22,7 +22,8 @@
     "lint:staged": "lint-staged",
     "lint": "npm run lint:bin && npm run lint:lib && npm run lint:test",
     "install-commit-validator": "fit-commit-js install",
-    "test": "jest --coverage --runInBand"
+    "test": "jest --coverage --runInBand --testPathPattern=lib",
+    "test:E2E": "jest --testPathPattern=E2E"
   },
   "dependencies": {
     "babel-code-frame": "^6.22.0",
