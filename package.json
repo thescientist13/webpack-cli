@@ -18,12 +18,13 @@
   "scripts": {
     "lint:bin": "eslint ./bin",
     "lint:lib": "eslint ./lib",
+    "lint:e2e": "eslint ./e2e",
     "lint:test": "eslint ./__mocks__",
     "lint:staged": "lint-staged",
-    "lint": "npm run lint:bin && npm run lint:lib && npm run lint:test",
+    "lint": "npm run lint:bin && npm run lint:lib && npm run lint:test && lint:e2e",
     "install-commit-validator": "fit-commit-js install",
     "test": "jest --coverage --runInBand --testPathPattern=lib",
-    "test:E2E": "jest --testPathPattern=E2E"
+    "test:e2e": "jest --testPathPattern=e2e"
   },
   "dependencies": {
     "babel-code-frame": "^6.22.0",
@@ -49,7 +50,7 @@
     "recast": "git://github.com/kalcifer/recast.git#bug/allowbreak",
     "resolve-cwd": "^2.0.0",
     "supports-color": "^3.1.2",
-    "webpack": "^2.5.1",
+    "webpack": "^2.6.1",
     "webpack-addons": "^1.1.2",
     "yargs": "^6.5.0",
     "yeoman-environment": "^1.6.6",
